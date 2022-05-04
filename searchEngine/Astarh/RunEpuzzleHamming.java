@@ -5,7 +5,7 @@ public class RunEpuzzleHamming {
   public static void main(String[] arg) {
 
 	EpuzzGen eG = new EpuzzGen();
-	int seed = 1111;
+	int seed = 4506;
 	EpuzzGen gen = new EpuzzGen(seed);
 	int dif = 12;
 	int g = 1;
@@ -16,7 +16,7 @@ public class RunEpuzzleHamming {
     	for (int count2 = 0;count2 < 3;count2++) {
     	    if (intl[count][count2] !=finl[count][count2]) all +=1;
     	}
-    }
+    }//get Hamming
 	
     EpuzzleSearch searcher = new EpuzzleSearch(finl);
 

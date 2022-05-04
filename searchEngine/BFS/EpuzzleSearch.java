@@ -9,7 +9,7 @@ public class EpuzzleSearch extends Search {
 
     public EpuzzleSearch(int[][] fin) {
         this.fin = fin;
-    }
+    }//get final state
 
 
     public int[][] getFin() {

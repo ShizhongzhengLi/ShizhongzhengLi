@@ -6,9 +6,9 @@ public class RunEpuzzleManhattan {
 
 
 	EpuzzGen eG = new EpuzzGen();
-	int seed = 1112;
+	int seed = 4504;
 	EpuzzGen gen = new EpuzzGen(seed);
-	int dif = 7;
+	int dif = 10;
 	int g = 1;
 	int intl[][] = gen.puzzGen(dif);
 	int finl[][] = {{1,2,3},{4,5,6},{7,8,0}};
@@ -33,7 +33,7 @@ public class RunEpuzzleManhattan {
                 d = d + Math.abs(i - si) + Math.abs(j - sj);
              }
           }
-       }
+       }//get Manhattan 
     }
 
     

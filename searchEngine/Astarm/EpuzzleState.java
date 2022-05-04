@@ -40,7 +40,7 @@ public class EpuzzleState extends SearchState {
        return true;
     }
     else return false;
-  }
+  }//set weather the current state equal to final state
 
 
   public ArrayList<SearchState> getSuccessors(Search searcher) {
@@ -58,7 +58,7 @@ public class EpuzzleState extends SearchState {
   		}
   		
   	  }
-  	}
+  	}//set where is the space
 
     ArrayList<EpuzzleState> EpuzzleStatesList = new ArrayList<EpuzzleState>(); 
     ArrayList<SearchState> searchStatesList = new ArrayList<SearchState>(); 
@@ -98,7 +98,7 @@ public class EpuzzleState extends SearchState {
       EpuzzleStatesList.add(new EpuzzleState(bu,localCost,d));
       
       
-    } 
+    } //space move to right
     
     
     if (space2 + 1 <= 2) {
@@ -136,7 +136,7 @@ public class EpuzzleState extends SearchState {
         EpuzzleStatesList.add(new EpuzzleState(bu2,localCost,d));
         
         
-    }
+    }//space move down
     
     if (space1 - 1 >= 0) {
     	int [][] bu3 = new int[3][3];
@@ -171,7 +171,7 @@ public class EpuzzleState extends SearchState {
         }
         EpuzzleStatesList.add(new EpuzzleState(bu3,localCost,d));
         
-   	}
+   	}//space move to left
     
     if (space2 - 1 >= 0) {
     	int [][] bu4 = new int[3][3];
@@ -207,7 +207,7 @@ public class EpuzzleState extends SearchState {
         EpuzzleStatesList.add(new EpuzzleState(bu4,localCost,d)); 
                 
 
-    }
+    }//space move up
     
     
 
@@ -215,7 +215,7 @@ public class EpuzzleState extends SearchState {
       searchStatesList.add((SearchState)che);
     }
     return searchStatesList;
-  }
+  }//return the list which is available to move
 
 
   public boolean sameState(SearchState stpast) {
@@ -232,7 +232,7 @@ public class EpuzzleState extends SearchState {
 	    	}
 	    }
 	    return same;
-  }
+  }//find weather the current state is same to a state is open or close
 
 
 
